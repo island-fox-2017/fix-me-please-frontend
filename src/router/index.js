@@ -11,12 +11,14 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      props: true
     },
     {
       path: '/post',
       name: 'Post',
-      component: Post
+      component: Post,
+      props: true
     },
     {
       path: '/detail/:id',
