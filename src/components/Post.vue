@@ -43,7 +43,7 @@ export default {
         detail: ''
       },
       loading: true,
-      err: false,
+      err: false
     }
   },
   methods: {
