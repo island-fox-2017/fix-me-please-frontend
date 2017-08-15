@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
   methods: {
     toggleSideNavLeft(route) {
       if (typeof (route) == 'object') {
