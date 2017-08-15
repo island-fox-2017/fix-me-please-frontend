@@ -43,11 +43,13 @@ export default {
         detail: ''
       },
       loading: true,
-      err: false,
+      // menghilangkan koma
+      err: false
     }
   },
   methods: {
-    getCat() {
+    // menambahkan spasi
+    getCat () {
       this.$http.get('http://random.cat/meow')
         .then((response) => {
           this.randomCat.url = response.data.file
@@ -57,14 +59,17 @@ export default {
           this.err = err
         })
     },
-    postCat() {
+    // menambahkan spasi
+    postCat () {
       console.log('postCat ', this.randomCat)
       this.$db.ref('cats').push(this.randomCat, () => {
-        this.$router.push('/');
+        // menghilangkan semicolon
+        this.$router.push('/')
       })
     }
   },
-  mounted: {
+  // menjadikan function
+  mounted () {
     this.getCat()
   }
 }
