@@ -23,7 +23,7 @@ export default {
     return {
       cat: {
         asObject: true,
-        //menghilangkan koma
+        // menghilangkan koma
         source: this.$db.ref('cats').child(this.id)
       }
       // menghilangkan koma

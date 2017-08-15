@@ -24,14 +24,15 @@
 <script>
 export default {
   firebase () {
-    {
-      cats: this.$db.ref('cats');
+    // menambahkan return
+    return {
+      cats: this.$db.ref('cats')
     }
   },
   computed: {
-    //menjadikan function
+    // menjadikan function
     latestCats () {
-      //menambahkan return
+      // menambahkan return
       return this.cats.reverse()
     }
   }
