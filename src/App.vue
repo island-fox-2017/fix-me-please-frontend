@@ -24,7 +24,7 @@
           </md-list-item>
           <md-list-item @click.native="toggleSideNavLeft('/post')">
             <md-icon>add</md-icon>
-            <span>New Post</span>
+            <span><router-link to="/post">New Post</router-link></span>
           </md-list-item>
         </md-list>
       </div>
