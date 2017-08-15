@@ -20,7 +20,7 @@
         <md-list>
           <md-list-item @click.native="toggleSideNavLeft('/')">
             <md-icon>home</md-icon>
-            <span>Home</span>
+            <span><router-link to="/">Home</router-link></span>
           </md-list-item>
           <md-list-item @click.native="toggleSideNavLeft('/post')">
             <md-icon>add</md-icon>
