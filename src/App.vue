@@ -37,7 +37,7 @@
 </template>
 
 <script>
-export {
+export default{ //add default
   name: 'app'
   methods: {
     toggleSideNavLeft(route) {
