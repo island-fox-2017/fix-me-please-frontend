@@ -37,8 +37,10 @@
 </template>
 
 <script>
-export {
-  name: 'app'
+//  menambahkan default
+export default {
+  //  menambahkan koma
+  name: 'app',
   methods: {
     toggleSideNavLeft(route) {
       if (typeof (route) == 'object') {
