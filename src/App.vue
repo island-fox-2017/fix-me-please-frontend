@@ -37,8 +37,8 @@
 </template>
 
 <script>
-export default { // kurang default
-  name: 'app'
+export default { // kurang 'default'
+  name: 'app', // kurang koma
   methods: {
     toggleSideNavLeft(route) {
       if (typeof (route) == 'object') {
